@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Cocogoose";
+  src: url("./Components/assets/Cocogoose.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cocogoose";
+}
+
+body {
+  background-color: rgb(246, 242, 200);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  background-color: #c8e48d;
+  border-radius: 45px;
+  outline: 20px solid #b2cc7c;
+}
+
+#title {
+  font-size: 30px;
+  color: #b2cc7c;
+  position: absolute;
+  left: 80px;
+  top: 80px;
+}
+
+.calculator {
+  position: absolute;
+  left: 115px;
+  bottom: 90px;
+}
+
+.calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator form input {
+  font-family: Helvetica;
+  width: 200px;
+  height: 30px;
+  background-color: #dcffaf;
+  border-radius: 45px;
+  border: none;
+  text-align: center;
+  font-weight: 900;
+  color: #b2cc7c;
+}
+
+.calculator form input::placeholder {
+  font-family: "Cocogoose";
+  color: #c8e48d;
+}
+
+.calculator form button {
+  transition: 0.15s ease;
+  cursor: pointer;
+  width: 90px;
+  border: none;
+  background-color: #b2cc7c;
+  color: #dcffaf;
+  border-radius: 45px;
+  padding: 7.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.calculator form button:hover {
+  color: #b2cc7c;
+  background-color: #dcffaf;
+}
+
+.results {
+  background-color: #b2cc7c;
+  border-radius: 45px;
+  position: relative;
+  left: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 350px;
+  font-size: 10px;
+  padding: 40px;
+}
+
+.score {
+  text-align: center;
+}
+
+#your-bmi-title {
+  font-size: 15px;
+  color: #c8e48d;
+}
+
+.results h1 {
+  font-family: Helvetica;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #dcffaf;
+}
+
+.results h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #769633;
+}
+
+#what-this-means {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  color: #769633;
+  font-family: Helvetica;
+  background-color: #c8e48d;
+  padding: 20px;
+  border-radius: 30px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  line-height: 12px;
+}
